@@ -13,6 +13,7 @@ return new class extends Migration
             $table->id();
             $table->string('book_title', 40);
             $table->integer('year_of_publication');
+            $table->text('bio')->nullable();
             $table->softDeletes();
             $table->timestamps();
         }
