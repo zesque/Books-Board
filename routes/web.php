@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainPageController::class, 'show_main']);
-Route::get('book/{book_number', [BookController::class, 'show_book']);
+Route::get('/book/{book_number}', [BookController::class, 'show_book']);
 Route::delete('/book/{book_number}', [BookController::class, 'delete_book']);
 Route::get('/author{author_name}', [AuthorController::class, 'show_author']);
 Route::get('/auth', [AutheficationController::class, 'show_authentification']);
