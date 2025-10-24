@@ -10,4 +10,9 @@ class AuthorController extends Controller
     {
 
     }
+
+    public function show_authors()
+    {
+        
+    }
 }
